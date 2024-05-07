@@ -22,7 +22,7 @@ import { AppComponent } from './app.component';
     FormsModule,
   ],
   providers: [],
-  bootstrap: []
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
 

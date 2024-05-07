@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { ServerComponent } from './server/server.component';
-import { ServersComponent } from './servers/servers.component';
 
 @Component({
   selector: 'app-root',
@@ -9,5 +7,5 @@ import { ServersComponent } from './servers/servers.component';
 })
 
 export class AppComponent {
-
+  title = 'angular-course';
 }
