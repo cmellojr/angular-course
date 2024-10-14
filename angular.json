@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "my-first-app": {
+    "essentials": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/my-first-app",
+            "outputPath": "dist/essentials",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -25,7 +25,6 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap-theme.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -58,10 +57,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "my-first-app:build:production"
+              "buildTarget": "essentials:build:production"
             },
             "development": {
-              "buildTarget": "my-first-app:build:development"
+              "buildTarget": "essentials:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -69,7 +68,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "my-first-app:build"
+            "buildTarget": "essentials:build"
           }
         },
         "test": {
